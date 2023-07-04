@@ -20,21 +20,21 @@ export class EmployeeListComponent implements  OnInit {
   }
 
   private getEmployees(){
-    this.employeeService.getEmployeeList().subscribe(data => {
+    this.employeeService.getEmployeeList().subscribe(data => { // subscribe to the getEmployeeList method
       this.employees =data;
     })
   }
 
   employeeDetails(id:number){
-    this.router.navigate(['employee-details', id]);
+    this.router.navigate(['employee-details', id]); // navigate to the employee-details page
   }
 
   updateEmployee(id: number){
 
-    this.router.navigate(['update-employee', id]);
+    this.router.navigate(['update-employee', id]); // navigate to the update-employee page
   }
   deleteEmployee(id: number){
-    this.employeeService.deleteEmployee(id).subscribe(data => {
+    this.employeeService.deleteEmployee(id).subscribe(data => { // subscribe to the deleteEmployee method
       console.log(data);
       this.getEmployees();
     })
