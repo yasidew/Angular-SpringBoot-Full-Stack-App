@@ -25,6 +25,7 @@ export class EmployeeService {
   }
 
   updateEmployee(id:number, employee: Employee):Observable<object>{
-    return this.httpClient.put(`${this.baseURL}/${id}`, employee);
+    return this.httpClient.put(`${this.baseURL}/${id}`, employee);  // the put method will return an observable object
   }
+  
 }
