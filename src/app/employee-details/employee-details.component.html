@@ -1,1 +1,41 @@
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
+    .employee-info {
+        margin-top: 20px;
+    }
+    
+    .employee-info div {
+        margin-bottom: 10px;
+    }
+
+    label {
+        display: inline-block;
+        width: 120px;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+    <h3>Employee Details</h3>
+    <div class="employee-info">
+        <div>
+            <label><b>First Name:</b></label> {{ employee.firstName }}
+        </div>
+        <div>
+            <label><b>Last Name:</b></label> {{ employee.lastName }}
+        </div>
+        <div>
+            <label><b>Email Id:</b></label> {{ employee.emailId }}
+        </div>
+    </div>
+</div>
