@@ -1,4 +1,4 @@
-#NOTE
+# Note
 Employee_management is the backed
 
 # AngularFrontend
